@@ -1,4 +1,5 @@
 @import "../fonts/fonts";
+@import "../sass/css/variables";
 
 * {
     font-family: 'Gotham Pro';
@@ -25,4 +26,5 @@ ul {
 }
 
 @import "blocks/intro";
-@import "blocks/header"
+@import "blocks/header";
+@import "blocks/buttons";

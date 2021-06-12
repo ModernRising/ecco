@@ -1,0 +1,19 @@
+.btn__order {
+    margin-top: 23px;
+    width: 175px;
+    height: 175px;
+    background: $main-color;
+    border-radius: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000851;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+        background: #eb410e;
+        color: #fff;
+    }
+}

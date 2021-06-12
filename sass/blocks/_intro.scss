@@ -1,20 +1,29 @@
 .intro {
     padding: 30px 0 45px 0px;
     min-height: 1500px;
+    position: relative;
     background: 
-                url("/img/effect.png") 5% 5% no-repeat,
-                url("/img/effect2.png") 95% 35% no-repeat,
+                url("/img/effect.png") 2% 10% no-repeat,
+                url("/img/effect2.png") 95% 50% no-repeat,
                 url("/img/angle.png") top right no-repeat,
                 url("/img/main-background.png") no-repeat center center/cover;
     &__wrapper {
-        margin: 0 auto;
-        max-width: 100%;
         text-align: center;
         text-transform: uppercase;
-        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+        max-width: 470px;
+        text-align: center;
     }
     &__sale {
-        margin: 0 auto;
+        margin-top: 35px;
         width: 306px;
         height: 80px;
         background: url("/img/sale.png") no-repeat center center/cover;
@@ -27,7 +36,7 @@
             position: relative;
             &::after {
                 content: "50%";
-                color: #ffea00;
+                color: $main-color;;
                 position: absolute;
                 top: 16px;
                 right: -47px;
@@ -35,4 +44,45 @@
             }
         }
     }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        &_old {
+            font-size: 24px;
+            color: #EEEEEE;
+            position: relative;
+            &::before {
+                position: absolute;
+                width: 105%;
+                height: 50%;
+                content: '';
+                border-bottom: 3px solid #FF0000;
+                pointer-events: none;
+                transform: rotate(-5deg);
+            }
+        }
+        &_new {
+            font-size: 36px;
+            font-weight: 500;
+            color: $main-color;;
+            margin-left: 25px;
+        }
+    }
+
+    &__shoes-left {
+        position: absolute;
+        left: 15%;
+        top: 10%;
+        width: 612px;
+    }
+
+    &__shoes-right {
+        position: absolute;
+        right: 18%;
+        top: 11%;
+        width: 522px;
+    }
+
 }
