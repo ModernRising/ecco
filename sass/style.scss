@@ -1,0 +1,28 @@
+@import "../fonts/fonts";
+
+* {
+    font-family: 'Gotham Pro';
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@import "blocks/intro";
+@import "blocks/header"
