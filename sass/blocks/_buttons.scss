@@ -17,3 +17,46 @@
         color: #fff;
     }
 }
+
+.btn__open-close {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: -5%;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    background: #d50450;
+      &:before, &:after {
+        position: absolute;
+        top: 12px;
+        left: 22px;
+        content: ' ';
+        height: 20px;
+        width: 2px;
+        background-color: #fff;
+      }
+      &:before {
+        transform: rotate(0deg);
+      }
+      &:after {
+        transform: rotate(90deg);
+      }
+
+      &-2 {
+        top: 4%;
+        right: 37%;
+        left: auto;
+      }
+
+      &-3 {
+        bottom: 15%;
+        right: 3%;
+        left: auto;
+        top: auto;
+      }
+      
+}
+
