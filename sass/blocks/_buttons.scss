@@ -45,10 +45,19 @@
         transform: rotate(90deg);
       }
 
+      &:hover ~ .card-1  {
+        opacity: 1;
+        visibility: visible;
+      }
+
       &-2 {
         top: 4%;
         right: 37%;
         left: auto;
+        &:hover ~ .card-2  {
+          opacity: 1;
+          visibility: visible;
+        }
       }
 
       &-3 {
@@ -56,7 +65,67 @@
         right: 3%;
         left: auto;
         top: auto;
+        &:hover ~ .card-3  {
+          opacity: 1;
+          visibility: visible;
+        }
       }
       
+}
+
+.btn__choice {
+  display: block;
+  position: relative;
+  width: 294px;
+  height: 51px;
+  color: #000851;
+  border: 1px solid #000851;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s all;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 18px;
+    left: 20px;
+    background: url("/icons/check.svg") no-repeat center center;
+  }
+  &:nth-child(1n+2) {
+    margin-top: 29px;
+  }
+  &_active {
+    color: #fff;
+    background-color: #000851;
+    &::before {
+      background: url("/icons/check_active.svg") no-repeat center center;
+    }
+  }
+ 
+}
+
+.slide {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  font-size: 0;
+  cursor: pointer;
+  background: url("/icons/slider-leftArrow.svg") no-repeat center center;
+  background-size: 16px 12px;
+  transition: 0.5s all;
+  z-index: 9999;
+  &_right {
+    right: 20px;
+    background: url("/icons/right-arrow.png") no-repeat center center;
+    background-size: 16px 12px;
+  }
+  &:hover {
+    background-color: #060951;
+    border-color: transparent;
+  }
 }
 

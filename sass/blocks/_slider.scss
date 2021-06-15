@@ -1,0 +1,40 @@
+.slick-track{
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.gallery__slider .slider {
+    min-width: 0;
+    position: relative;
+}
+
+.gallery__slider .slick-arrow.slick-prev{
+    display: none !important;
+}
+
+.gallery__slider .slick-arrow.slick-next{
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 0;
+    bottom: 10%;
+    left: -3%;
+    background: url("/icons/slider-leftArrow.svg") center center no-repeat;
+    background-color: $secondary-color;
+    border-radius: 100%;
+    transition: 0.3s all;
+    &:hover {
+         background-color: #060951;
+    }
+}
+
+.gallery__slider .slick-slide {
+    margin-left: 26px;
+}
+

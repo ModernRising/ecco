@@ -1,20 +1,39 @@
 "use strict";
 
-const closeCard = document.querySelector(".btn__open-close");
-const closeCard2 = document.querySelector(".btn__open-close-2");
-const closeCard3 = document.querySelector(".btn__open-close-3");
-const card = document.querySelector(".card");
-const card2 = document.querySelector(".card-2");
-const card3 = document.querySelector(".card-3");
+$('.slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed: 550,
+  });
 
-closeCard.addEventListener("click", function() {
-    card.classList.toggle("card_active");
+  const toggleActive = function () {
+    let btns = document.querySelectorAll(".btn__choice");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        let current = document.getElementsByClassName("btn__choice_active");
+        current[0].className = current[0].className.replace(" btn__choice_active", "");
+        this.className += " btn__choice_active";
+      });
+    }
+  };
+ toggleActive();
+
+ $('[data-open-block').on('click', function() {
+	const activeCls = 'advantages__demo_active';
+	$('[data-content]').removeClass(activeCls);
+  $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
 });
 
-closeCard2.addEventListener("click", function() {
-    card2.classList.toggle("card-2_active");
-});
+const slide = document.querySelector(".slide");
+const slide2 = document.querySelector(".slide_right");
+const shoes1 = document.querySelector(".products__shoes-1");
+const shoes2 = document.querySelector(".products__shoes-2");
 
-closeCard3.addEventListener("click", function() {
-    card3.classList.toggle("card-3_active");
+slide.addEventListener("click", () => {
+  shoes1.classList.toggle("products__shoes-1_animate");
+  shoes2.classList.toggle("products__shoes-2_animate");
+});
+slide2.addEventListener("click", () => {
+  shoes1.classList.toggle("products__shoes-1_animate");
+  shoes2.classList.toggle("products__shoes-2_animate");
 });

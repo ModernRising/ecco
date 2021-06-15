@@ -1,0 +1,121 @@
+.products {
+    padding: 100px 0 150px 0px;
+    background: #000851;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__col-l {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 30px 0px 0px;
+        position: relative;
+        width: 40%;
+        min-height: 601px;
+        background: linear-gradient(45deg, #8914c3, #bd2276);
+        border-radius: 25px;
+    }
+
+    &__sales {
+        width: 101px;
+        height: 101px;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        background: $main-color;
+        border-radius: 100%;
+        padding: 34px 13px 0px 19px;
+        color: #000851;
+    }
+
+    &__shoes-1 {
+        position: absolute;
+        bottom: 35px;
+        left: -81px;
+        right: -130px;
+        transition: all .5s;
+        z-index: 10;
+        &_animate {
+            animation: shiftShoes  1.2s linear;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+        }
+    }
+
+    @keyframes shiftShoes {
+        100% {
+            bottom: 34px;
+            left: -39px;
+            right: 282px;
+        }
+    }
+
+    &__shoes-2 {
+        position: absolute;
+        bottom: -18px;
+        left: -109px;
+        right: 250px;
+        transition: all .5s;
+        z-index: 10;
+        &_animate {
+            animation: shiftShoes2  1.2s linear;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+        }
+    }
+
+    @keyframes shiftShoes2 {
+        100% {
+            bottom: 35px;
+            left: -81px;
+            right: -130px;
+        }
+    }
+
+    &__col-2 {
+        width: 60%;
+        min-height: 501px;
+        background: #D2ECFE;
+        border-radius: 0px 25px 25px 0px;
+        padding: 30px 0 35px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        margin-left: 25px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #000851;
+    }
+    .price {
+        margin-top: 20px;
+    }
+    &__container {
+        align-self: flex-start;
+        padding-left: 140px;
+        margin-top: 14px;
+        display: flex;
+        font-size: 18px;
+        color: #000851;
+    }
+    &__name {
+        span {
+            display: block;
+            margin-top: 8px;
+        }
+    }
+    &__descr {
+        margin-left: 30px;
+        span {
+            display: block;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+    }
+    
+}
