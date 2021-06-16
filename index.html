@@ -8,6 +8,7 @@
     <title>ECCO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                     <div class="price_old">3690 грн</div>
                     <div class="price_new">1379 грн</div>
                 </div>
-                <button class="btn__order">
+                <button class="btn__sales">
                     заказать по скидке
                 </button>
             </div>
@@ -190,7 +191,7 @@
                 <div class="products__col-l">
                     <div class="products__sales">60%</div>
                     <div class="products__shoes-1">
-                        <img src="img/products/products1.png" alt="products">
+                        <img src="img/products/products1.png" data-="black" alt="products">
                     </div>
                     <div class="products__shoes-2">
                         <img src="img/products/products2.png" alt="products">
@@ -199,39 +200,147 @@
                     <button class="slide slide_right"></button>
                 </div>
                 <div class="products__col-2">
-                    <div class="products__header">
-                        <a href="#" class="logo-link">
-                            <img src="img/logo.png" alt="logo" class="logo">
+                    <div class="products__col-2-container products__col-2-container_active">
+                        <div class="products__header">
+                            <a href="#" class="logo-link">
+                                <img src="img/logo.png" alt="logo" class="logo">
+                            </a>
+                            <div class="products__title">LOREM IPSUM DOLOR</div>
+                        </div>
+                        <div class="price">
+                            <div class="price_old price_old-red">3690 грн</div>
+                            <div class="price_new price_new-red">1379 грн</div>
+                        </div>
+                        <div class="products__container">
+                            <div class="products__name">
+                                <span>Сезон</span>
+                                <span>Вид товаров:</span>
+                                <span>Каблук:</span>
+                                <span>Верх:</span>
+                                <span>Подошва:</span>
+                                <span>Стиль:</span>
+                            </div>
+                            <div class="products__descr">
+                                <span>Осень 2019</span>
+                                <span>Кроссовки</span>
+                                <span>Ниже 30 мм</span>
+                                <span>Натуральная телячья кожа</span>
+                                <span>Термополиуретан</span>
+                                <span>Ежедневный (casual)</span>
+                            </div>
+                        </div>
+                        <div class="products__images products__images_active">
+                            <a href="img/products/item.jpg" data-lightbox="mygallery">
+                                <img src="img/products/item.jpg" alt="">
+                            </a>
+                            <a href="img/products/item2.jpg" data-lightbox="mygallery">
+                                <img src="img/products/item2.jpg" alt="">
+                            </a>
+                            <a href="img/products/item3.jpg" data-lightbox="mygallery">
+                                <img src="img/products/item3.jpg" alt="">
+                            </a>
+                            <a href="img/products/item4.jpg" data-lightbox="mygallery">
+                                <img src="img/products/item4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="products__images">
+                            <a href="img/products/item5.jpg" data-lightbox="mygallery">
+                                <img src="img/products/item5.jpg" alt="">
+                            </a>
+                            <a href="img/products/item6.jpg" data-lightbox="mygallery">
+                                <img src="img/products/item6.jpg" alt="">
+                            </a>
+                            <a href="img/products/item7.jpg" data-lightbox="mygallery">
+                                <img src="img/products/item7.jpg" alt="">
+                            </a>
+                            <a href="img/products/item8.jpg" data-lightbox="mygallery">
+                                <img src="img/products/item8.jpg" alt="">
+                            </a>
+                        </div>
+                        <button class="btn__order">ЗАКАЗАТЬ</button>
+                    </div>
+                    <div class="products__col-2-container">
+                        <div class="products__header">
+                            <a href="#" class="logo-link">
+                                <img src="img/logo.png" alt="logo" class="logo">
+                            </a>
+                            <div class="products__title">LOREM IPSUM DOLOR</div>
+                        </div>
+                        <div class="price">
+                            <div class="price_old price_old-red">3690 грн</div>
+                            <div class="price_new price_new-red">1379 грн</div>
+                        </div>
+                        <form action="#" class="products__form">
+                            <div class="form-select">
+                                <select class="select-field" name="colors">
+                                    <option value="red">Цвет</option>
+                                    <option value="pink">Цвет</option>
+                                    <option value="brown">Цвет</option>
+                                    <option value="yellow">Цвет</option>
+                                </select>
+                            </div>
+                            <div class="form-select form-select_size">
+                                <select class="select-field" name="size">
+                                    <option value="size">Размер: 38 (25.5 см)</option>
+                                    <option value="size">Размер: 38 (25.5 см)</option>
+                                    <option value="size">Размер: 38 (25.5 см)</option>
+                                    <option value="size">Размер: 38 (25.5 см)</option>
+                                </select>
+                            </div>
+                            <input type="text" class="select-field" required placeholder="Имя">
+                            <input type="number" class="select-field" required placeholder="Телефон">
+                            <button class="btn__order">ЗАКАЗАТЬ</button>
+                        </form>
+                        <a href="#" class="link-back">
+                            Назад к харакстеристикам
                         </a>
-                        <div class="products__title">LOREM IPSUM DOLOR</div>
                     </div>
-                    <div class="price">
-                        <div class="price_old price_old-red">3690 грн</div>
-                        <div class="price_new price_new-red">1379 грн</div>
-                    </div>
-                    <div class="products__container">
-                        <div class="products__name">
-                            <span>Сезон</span>
-                            <span>Вид товаров:</span>
-                            <span>Каблук:</span>
-                            <span>Верх:</span>
-                            <span>Подошва:</span>
-                            <span>Стиль:</span>
+                </div>
+            </div>
+            <div class="products__second-wrapper">
+                <div class="products__col-2 products__col-2_second">
+                    <div class="products__col-2-block">
+                        <div class="products__header">
+                            <a href="#" class="logo-link">
+                                <img src="img/logo.png" alt="logo" class="logo">
+                            </a>
+                            <div class="products__title">Bouileine Shoes Spray</div>
                         </div>
-                        <div class="products__descr">
-                            <span>Осень 2019</span>
-                            <span>Кроссовки</span>
-                            <span>Ниже 30 мм</span>
-                            <span>Натуральная телячья кожа</span>
-                            <span>Термополиуретан</span>
-                            <span>Ежедневный (casual)</span>
+                        <div class="price">
+                            <div class="price_old price_old-red">3690 грн</div>
+                            <div class="price_new price_new-red">1379 грн</div>
+                        </div>
+                        <div class="products__col-2-descr">
+                            Высоко-концентрированный спрей для ног и коленей
+                            активирует метаболические процессы, оказывает
+                            дренирующее действие, улучшает силуэт. Спрей
+                            устраняет отеки, снимает судороги в икроножных мышцах, боли и напряжение в ногах.
+                        </div>
+                        <form action="#" class="products__form">
+                            <input type="text" class="select-field" required placeholder="Имя">
+                            <input type="number" class="select-field" required placeholder="Телефон">
+                            <button class="btn__order">ЗАКАЗАТЬ</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="products__col-l">
+                    <div class="products__sales">60%</div>
+                    <div class="products__col-l-images">
+                        <div class="products__item products__item_active">
+                            <img src="img/products/products-image.png" alt="Спрей">
+                        </div>
+                        <div class="products__item">
+                            <img src="img/products/products-image2.png" alt="Спрей">
                         </div>
                     </div>
+                    <button class="arr arr_left"></button>
+                    <button class="arr arr_right"></button>
                 </div>
             </div>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>

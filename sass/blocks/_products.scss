@@ -7,7 +7,6 @@
     }
     &__col-l {
         display: flex;
-        justify-content: flex-end;
         padding: 30px 30px 0px 0px;
         position: relative;
         width: 40%;
@@ -17,6 +16,8 @@
     }
 
     &__sales {
+        position: absolute;
+        right: 20px;
         width: 101px;
         height: 101px;
         font-size: 30px;
@@ -35,20 +36,8 @@
         right: -130px;
         transition: all .5s;
         z-index: 10;
-        &_animate {
-            animation: shiftShoes  1.2s linear;
-            animation-fill-mode: forwards;
-            animation-iteration-count: 1;
-        }
     }
 
-    @keyframes shiftShoes {
-        100% {
-            bottom: 34px;
-            left: -39px;
-            right: 282px;
-        }
-    }
 
     &__shoes-2 {
         position: absolute;
@@ -57,19 +46,6 @@
         right: 250px;
         transition: all .5s;
         z-index: 10;
-        &_animate {
-            animation: shiftShoes2  1.2s linear;
-            animation-fill-mode: forwards;
-            animation-iteration-count: 1;
-        }
-    }
-
-    @keyframes shiftShoes2 {
-        100% {
-            bottom: 35px;
-            left: -81px;
-            right: -130px;
-        }
     }
 
     &__col-2 {
@@ -78,9 +54,18 @@
         background: #D2ECFE;
         border-radius: 0px 25px 25px 0px;
         padding: 30px 0 35px 0px;
-        display: flex;
+        &_second {
+            border-radius: 25px 0px 0px 25px;
+        }
+    }
+    &__col-2-container {
+        display: none;
         flex-direction: column;
         align-items: center;
+        &_active {
+            display: flex;
+            animation: fadeIn 1s;
+        }
     }
     &__header {
         display: flex;
@@ -88,6 +73,7 @@
     }
     &__title {
         margin-left: 25px;
+        text-transform: uppercase;
         font-size: 30px;
         font-weight: 500;
         color: #000851;
@@ -117,5 +103,116 @@
             font-weight: 500;
         }
     }
-    
+
+    &__images {
+        display: none;
+        margin-top: 20px;
+        &_active {
+            display: flex;
+            flex-wrap: wrap;
+            animation: fadeIn 1s;
+        }
+        & a {
+            width: 108px;
+            height: 72px;
+            margin-left: 15px;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+          to { opacity: 1; }
+    }
+
+    &__form {
+        margin-top: 10px;
+        
+        input::placeholder{
+            color: #000851; 
+        }
+        .select-field {
+            display: block;
+            margin-top: 8px;
+            width: 281px;
+            height: 51px;
+            padding: 13px 0px 15px 21px;
+            border-radius: 15px;
+            border: 1.5px solid #000851;
+            color: #000851;
+            font-size: 18px;
+            font-weight: 500;
+            outline: none;
+        }
+        option {
+            outline: none;
+        }
+        .form-select {
+            position: relative;
+            &::before {
+                content:"";
+                position: absolute;
+                top: 41%;
+                left: 86px;
+                width: 12px;
+                height: 12px;
+                background: black;
+                border-radius: 100%;
+            }
+            &_size {
+                &::before {
+                    content: none;
+                }
+            }
+        }
+    }
+    .link-back {
+        display: block;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000851;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: -30px;
+            width: 16px;
+            height: 12px;
+            background: url("/img/products/link-arrow.svg") center center no-repeat;
+        }
+    }
+
+    &__second-wrapper {
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+    }
+    &__col-2-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__col-2-descr {
+        margin-top: 21px;
+        max-width: 518px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    &__col-l-images {
+        display: flex;
+        margin: 0 auto;
+        padding-top: 30px;
+        overflow: hidden;
+    }
+    &__item{
+        display: none;
+        &_active {
+            display: block;
+            animation: fadeIn 1s;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-.btn__order {
+.btn__sales {
     margin-top: 23px;
     width: 175px;
     height: 175px;
@@ -124,8 +124,49 @@
     background-size: 16px 12px;
   }
   &:hover {
-    background-color: #060951;
+    background-color: #000851;
     border-color: transparent;
   }
 }
+
+.btn__order {
+  margin-top: 29px;
+  display: block;
+  width: 281px;
+  height: 45px;
+  background: linear-gradient( 90deg, #8914c3, #bd2276);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+.arr {
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  font-size: 0;
+  cursor: pointer;
+  transition: 0.5s all;
+  z-index: 9999;
+  &:hover {
+    background-color: #000851;
+    border-color: transparent;
+  }
+  &_left {
+    background: url("/icons/slider-leftArrow.svg") no-repeat center center;
+    background-size: 16px 12px;
+    left: 20px;
+  }
+  &_right {
+    background: url("/icons/right-arrow.png") no-repeat center center;
+    background-size: 16px 12px;
+    right: 20px;
+  }
+}
+
 
