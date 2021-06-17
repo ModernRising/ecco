@@ -650,6 +650,7 @@ button {
   padding: 100px 0px;
   background-color: #D2ECFE;
   z-index: 110;
+  overflow-x: hidden;
   position: relative;
 }
 
