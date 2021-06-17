@@ -30,6 +30,10 @@ a {
     text-decoration: none
 }
 
+button {
+    outline: none;
+}
+
 @import "blocks/intro";
 @import "blocks/sale-prices";
 @import "blocks/header";
