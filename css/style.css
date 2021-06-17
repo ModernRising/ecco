@@ -657,6 +657,7 @@ button {
 .advantages__effect {
   position: absolute;
   z-index: 9999;
+  pointer-events: none;
   top: 0%;
   left: 5%;
 }
@@ -758,9 +759,10 @@ button {
 
 .advantages__footer-img {
   position: absolute;
-  z-index: -9999;
+  z-index: -99999;
   bottom: -12%;
   right: -50%;
+  pointer-events: none;
 }
 
 .title {
@@ -1111,7 +1113,7 @@ button {
     max-width: 380px;
   }
   .advantages__effect {
-    z-index: -1;
+    z-index: -999999;
     top: 2%;
     left: -8%;
   }
