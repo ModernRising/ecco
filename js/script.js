@@ -127,13 +127,26 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   };
-  
+
   toggleImages();
+
+  const toggleAsideImage = function() {
+    const asideShoes = document.querySelectorAll(".products__shoes-aside");
+    for (let i = 0; i < asideShoes.length; i++) {
+      slideRight.addEventListener("click", ()=> {
+        asideShoes[i].classList.toggle("products__shoes-aside_active");
+      });
+      slideLeft.addEventListener("click", ()=> {
+        asideShoes[i].classList.toggle("products__shoes-aside_active");
+      });
+    }
+  };
   
-  const btnOrder = document.querySelector(".btn__order");
-  const linkBack = document.querySelector(".link-back");
+  toggleAsideImage();
   
   const toggleProductsBlock = function() {
+    const btnOrder = document.querySelector(".btn__order");
+    const linkBack = document.querySelector(".link-back");
     const productsContainer = document.querySelectorAll(".products__col-2-container");
     for (let i = 0; i < productsContainer.length; i++) {
       btnOrder.addEventListener("click", () => {
@@ -166,4 +179,6 @@ window.addEventListener("DOMContentLoaded", () => {
   
   toggleSpray();
 });
+
+
 
