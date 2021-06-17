@@ -12,6 +12,7 @@
     border: none;
     cursor: pointer;
     transition: 0.3s all;
+    z-index: 99999;
     &:hover {
         background: #eb410e;
         color: #fff;
@@ -21,8 +22,6 @@
 .btn__open-close {
     position: absolute;
     z-index: 1;
-    top: 40%;
-    left: -5%;
     width: 45px;
     height: 45px;
     border-radius: 100%;
@@ -50,10 +49,14 @@
         visibility: visible;
       }
 
+      &-1 {
+        top: 44%;
+        left: -5%;
+      }
+
       &-2 {
         top: 4%;
         right: 37%;
-        left: auto;
         &:hover ~ .card-2  {
           opacity: 1;
           visibility: visible;
@@ -61,10 +64,8 @@
       }
 
       &-3 {
-        bottom: 15%;
+        bottom: 11%;
         right: 3%;
-        left: auto;
-        top: auto;
         &:hover ~ .card-3  {
           opacity: 1;
           visibility: visible;
@@ -89,7 +90,7 @@
     width: 21px;
     height: 18px;
     left: 20px;
-    background: url("/icons/check.svg") no-repeat center center;
+    background: url("../icons/check.svg") no-repeat center center;
   }
   &:nth-child(1n+2) {
     margin-top: 29px;
@@ -98,7 +99,7 @@
     color: #fff;
     background-color: #000851;
     &::before {
-      background: url("/icons/check_active.svg") no-repeat center center;
+      background: url("../icons/check_active.svg") no-repeat center center;
     }
   }
  
@@ -114,13 +115,13 @@
   border: 1px solid #fff;
   font-size: 0;
   cursor: pointer;
-  background: url("/icons/slider-leftArrow.svg") no-repeat center center;
+  background: url("../icons/slider-leftArrow.svg") no-repeat center center;
   background-size: 16px 12px;
   transition: 0.5s all;
   z-index: 9999;
   &_right {
     right: 20px;
-    background: url("/icons/right-arrow.png") no-repeat center center;
+    background: url("../icons/right-arrow.png") no-repeat center center;
     background-size: 16px 12px;
   }
   &:hover {
@@ -158,12 +159,12 @@
     border-color: transparent;
   }
   &_left {
-    background: url("/icons/slider-leftArrow.svg") no-repeat center center;
+    background: url("../icons/slider-leftArrow.svg") no-repeat center center;
     background-size: 16px 12px;
     left: 20px;
   }
   &_right {
-    background: url("/icons/right-arrow.png") no-repeat center center;
+    background: url("../icons/right-arrow.png") no-repeat center center;
     background-size: 16px 12px;
     right: 20px;
   }

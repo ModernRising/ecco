@@ -1,8 +1,5 @@
 .advantages {
     padding: 100px 0px;
-    /* background: 
-                url("/img/effect.png") 10% 5% no-repeat,
-                url("/img/effect2.png") 95% 40% no-repeat; */
     background-color: #D2ECFE;
     z-index: 110;
     position: relative;
@@ -12,7 +9,7 @@
         top: 3%;
         left: 5%;
         &_2 {
-            top: 30%;
+            top: 50%;
             left: auto;
             right: 5%;
         }
@@ -42,7 +39,7 @@
         }
     }
     &__block {
-        flex: 0 0 50%;
+        flex: 1 0 50%;
         background: #000851;
         border-radius: 0 25px 25px 0px;
         padding: 86px 24px 89px 59px;

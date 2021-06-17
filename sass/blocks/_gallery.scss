@@ -1,15 +1,12 @@
 .gallery {
-    background: url("/img/section2.png") no-repeat center center/cover;
+    background: url("../img/section2.png") no-repeat center center/cover;
     &__wrapper {
         display: flex;
         align-items: center;
         min-height: 800px;
         
     }
-    &__block {
-        /* width: 50%; */
-    }
-    &__title {
+    .title {
         font-size: 40px;
         font-weight: 500;
         color: #000851;

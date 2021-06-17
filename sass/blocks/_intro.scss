@@ -3,10 +3,10 @@
     min-height: 1500px;
     position: relative;
     background: 
-                url("/img/effect.png") 2% 10% no-repeat,
-                url("/img/effect2.png") 95% 50% no-repeat,
-                url("/img/angle.png") top right no-repeat,
-                url("/img/main-background.png") no-repeat center center/cover;
+                url("../img/effect.png") 2% 10% no-repeat,
+                url("../img/effect2.png") 95% 50% no-repeat,
+                url("../img/angle.png") top right no-repeat,
+                url("../img/main-background.png") no-repeat center center/cover;
     &__wrapper {
         text-align: center;
         text-transform: uppercase;
@@ -24,17 +24,19 @@
     }
 
     &__shoes-left {
+        display: block;
         position: absolute;
-        left: 15%;
+        left: 14%;
         top: 9%;
-        width: 612px;
+        max-width: 612px;
     }
 
     &__shoes-right {
+        display: block;
         position: absolute;
         right: 18%;
         top: 10%;
-        width: 522px;
+        max-width: 522px;
     }
 
     &__footer {
@@ -55,7 +57,7 @@
         text-align: center;
         font-size: 18px;
         color: #000851;
-        line-height: 24px;
+        line-height: 28px;
     }
     &__footer-wrapper {
         position: relative;

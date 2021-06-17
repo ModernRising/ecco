@@ -1,0 +1,461 @@
+@media (max-width: 1400px) {
+    .intro {
+        &__shoes-left {
+            left: 0%;
+            top: 9%;
+            max-width: 570px;
+        }
+    
+        &__shoes-right {
+            right: 5%;
+            top: 10%;
+            max-width: 460px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
+    .intro {
+        background: url("../img/angle.png") top no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        &__shoes-left {
+            left: 0%;
+            top: 13%;
+            max-width: 470px;
+        }
+    
+        &__shoes-right {
+            right: 4%;
+            top: 12%;
+            max-width: 380px;
+        }
+    }
+    .advantages {
+        &__effect {
+            position: absolute;
+            z-index: -1;
+            top: 2%;
+            left: -8%;
+            &_2 {
+                top: 50%;
+                left: auto;
+                right: 5%;
+            }
+            &_3 {
+                top: 55%;
+                left: 6%;
+            }
+        }
+        &__block {
+            padding: 13px 16px 0px 24px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .intro {
+        background: url("../img/angle.png") top no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        min-height: 1300px;
+        &__shoes-left {
+            left: -2%;
+            top: 19%;
+            max-width: 380px
+        }
+    
+        &__shoes-right {
+            right: -3%;
+            top: 17%;
+            max-width: 320px;
+        }
+
+        &__footer {
+            padding-top: 120px;
+        }
+
+        &__footer-wrapper {
+            max-width: 80%;
+        }
+        
+        .btn__open-close {
+            &-1 {
+                top: 57%;
+                left: -5%;;
+            }
+            &-2 {
+                top: 2%;
+                right: 31%;
+            }
+            &-3 {
+                bottom: -3%;
+                right: 2%
+            }
+        }
+        .card {
+            top: -31%;
+            left: -2%;
+            &-2 {
+                top: 8%;
+                left: 17%;
+            }
+            &-3 {
+                top: 5%;
+                left: auto;
+            }
+        }
+    }
+
+    .gallery {
+        padding: 100px 0 100px 0;
+        &__wrapper {
+            display: block;
+        }
+        &__block {
+            text-align: center;
+        }
+        &__descr {
+            margin: 0 auto;
+            margin-top: 44px;
+            width: auto;
+            max-width: 75%;
+        }
+        &__slider {
+            margin-left: 0;
+            margin-top: 35px;
+        }
+    }
+
+    .advantages {
+        &__container {
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        &__buttons {
+            width: 100%;
+            .btn__choice {
+                margin: 0 auto;
+                margin-top: 29px;
+                width: 60%;
+                height: 70px;
+            }
+        }
+        &__demo {
+            &_active {
+                display: flex;
+                margin-top: 50px;
+                margin-left: 0;
+            }
+        }
+        &__show {
+        }
+        &__block {
+            padding: 86px 24px 50px 59px;
+        }
+
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+    }
+    .intro {
+        background: url("../img/angle.png") top no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        &__title {
+            font-size: 32px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+        .btn__sales {
+            width: 145px;
+            height: 145px;
+            font-size: 16px;
+        }
+        &__shoes-left {
+            left: -2%;
+            top: 20%;
+            max-width: 320px;
+        }
+    
+        &__shoes-right {
+            right: -2%;
+            top: 18%;
+            max-width: 270px;
+        }
+
+        &__footer {
+            padding-top: 190px;
+            .title {
+                font-size: 30px;
+            }
+        }
+        .btn__open-close {
+            display: none;
+            pointer-events:none;
+        }
+
+        .card {
+            margin: 0 auto;
+            margin-top: 25px;
+            width: 100%;
+            padding: 31px 60px 50px 60px;
+            opacity: 1;
+            visibility: visible;
+            position: static;
+            border-radius: 25px;
+        }
+    }
+    
+    .gallery {
+        padding: 60px 0 100px 0;
+        &__wrapper {
+            min-height: auto;
+        }
+        .title {
+            font-size: 30px;
+        }
+        &__descr {
+            margin-top: 20px;
+            max-width: 90%;
+            font-size: 18px;
+        }
+    }
+    .advantages {
+        .title {
+            font-size: 30px;
+        }
+        &__container {
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        &__buttons {
+            display: none;
+        }
+        &__demo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            margin-left: 0;
+        }
+        &__show {
+            max-width: 80%;
+            img {
+                border-radius: 25px 25px 0px 0px;
+            }
+        }
+        &__block {
+            border-radius: 0px 0px 25px 25px;
+            max-width: 80%;
+            padding: 86px 24px 50px 59px;
+        }
+
+    }
+}
+
+@media (max-width: 575px) {
+    .intro {
+        background: url("../img/angle.png") top no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        &__title {
+            font-size: 28px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+        .btn__sales {
+            width: 145px;
+            height: 145px;
+            font-size: 16px;
+        }
+        &__shoes-left {
+            left: -2%;
+            top: 23%;
+            max-width: 250px;
+        }
+    
+        &__shoes-right {
+            right: 0%;
+            top: 18%;
+            max-width: 220px;
+        }
+
+        &__footer {
+            padding-top: 250px;
+            .title {
+                font-size: 28px;
+            }
+        }
+        .card {
+            &__title {
+                font-size: 22px;
+            }
+            &__descr {
+                font-size: 16px;
+            }
+        }
+    }
+    .gallery {
+        .title {
+            font-size: 28px;
+        }
+        &__descr {
+            max-width: 100%;
+            font-size: 18px;
+        }
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .intro {
+        padding: 60px 0 100px 0;
+        background: url("../img/angle.png") 29% 0% no-repeat,
+                    url("../img/main-background.png") no-repeat center center/cover;
+        &__title {
+            font-size: 24px;
+            padding-bottom: 180px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+        .btn__sales {
+            margin-top: 10px;
+            width: 145px;
+            height: 145px;
+            font-size: 16px;
+        }
+        &__shoes-left {
+            left: 13.5%;
+            top: 11%;
+            max-width: 180px;
+        }
+    
+        &__shoes-right {
+            right: 9%;
+            top: 10%;
+            max-width: 160px;
+        }
+
+        &__footer {
+            padding-top: 0px;
+            .title {
+                font-size: 24px;
+            }
+        }
+        .card {
+            padding: 23px 10px 35px 10px;
+            &__title {
+                font-size: 18px;
+            }
+            &__descr {
+                font-size: 16px;
+            }
+        }
+        .price {
+            margin-top: 10px;
+            &_old {
+                font-size: 24px;
+            }
+            &_new {
+                font-size: 26px;
+            }
+        }
+        &__footer-descr {
+            font-size: 16px;
+        }
+
+        &__footer-wrapper {
+            max-width: 100%;
+        }
+    }
+    .gallery {
+        padding: 60px 0 60px 0;
+        .title {
+            font-size: 24px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .intro {
+        &__title {
+            font-size: 20px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+        .btn__sales {
+            margin-top: 25px;
+            width: 135px;
+            height: 135px;
+            font-size: 15px;
+        }
+        &__shoes-left {
+            left: 8.5%;
+            top: 10%;
+        }
+    
+        &__shoes-right {
+            right: 8%;
+            top: 9%;
+        }
+
+        .sale {
+            width: 260px;
+            height: 80px;
+            padding: 14px 60px 0px 0px;
+            span {
+                font-size: 32px;
+                &::after {
+                    top: 20px;
+                    right: -51px;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &__footer {
+            .title {
+                font-size: 20px;
+            }
+        }
+        .card {
+            padding: 23px 10px 35px 10px;
+            &__title {
+                font-size: 18px;
+            }
+            &__descr {
+                font-size: 16px;
+            }
+        }
+        .price {
+            margin-top: 10px;
+            &_old {
+                font-size: 22px;
+            }
+            &_new {
+                font-size: 24px
+            }
+        }
+    }
+    .gallery {
+        .title {
+            font-size: 20px;
+        }
+    }
+}
