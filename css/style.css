@@ -649,8 +649,8 @@ button {
 .advantages {
   padding: 100px 0px;
   background-color: #D2ECFE;
-  z-index: 110;
-  overflow-x: hidden;
+  z-index: 9998;
+  overflow: hidden;
   position: relative;
 }
 
@@ -815,21 +815,11 @@ button {
 
 .products__shoes-1 {
   position: absolute;
-  bottom: 35px;
-  left: -81px;
-  right: -130px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
   z-index: 10;
 }
 
 .products__shoes-2 {
   position: absolute;
-  bottom: -18px;
-  left: -109px;
-  right: 250px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
   z-index: 10;
 }
 
