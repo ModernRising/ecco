@@ -12,6 +12,14 @@
             max-width: 460px;
         }
     }
+    .products {
+        &__shoes-aside {
+            display: none;
+            &_active {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {

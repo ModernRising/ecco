@@ -832,7 +832,7 @@ button {
 .products__shoes-aside {
   display: none;
   position: absolute;
-  right: -50%;
+  right: -45%;
   top: -75px;
   z-index: 10;
 }
@@ -1103,6 +1103,12 @@ button {
     right: 5%;
     top: 10%;
     max-width: 460px;
+  }
+  .products__shoes-aside {
+    display: none;
+  }
+  .products__shoes-aside_active {
+    display: none;
   }
 }
 
