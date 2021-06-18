@@ -1,5 +1,7 @@
 "use strict";
 window.addEventListener("DOMContentLoaded", () => {
+
+ /////////////////////// Слайдер //////////////////////
   
   $(".slider").slick({
     slidesToShow: 2,
@@ -19,8 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
           slidesToShow: 2,
           dots: true,
         }
-      },
-      
+      },  
       {
         breakpoint: 575,
         settings: {
@@ -28,16 +29,23 @@ window.addEventListener("DOMContentLoaded", () => {
           dots: true,
         }
       }
-      
-      
     ]
   });
+  /////////////////////////////////////////////
+
+
+  /////////////////////// Переключатель блоков через табы //////////////////////
   
   $("[data-open-block").on("click", function () {
     const activeCls = "advantages__demo_active";
     $("[data-content]").removeClass(activeCls);
     $(`[data-content="${$(this).data("open-block")}"`).addClass(activeCls);
   });
+  
+  /////////////////////////////////////////////
+
+
+  /////////////////////// Плавный скролл //////////////////////
 
   $(document).on('click', '#sales-link', function() {
     var linkID = $(this).attr('href');
@@ -45,7 +53,11 @@ window.addEventListener("DOMContentLoaded", () => {
       scrollTop: $(linkID).offset().top 
     }, 1200);
   });
-    
+
+  ///////////////////////////////////////////////////////////
+  
+
+  /////////////////////// Переключение активного таба //////////////////////
   
   const toggleActive = function () {
     let btns = document.querySelectorAll(".btn__choice");
@@ -53,15 +65,18 @@ window.addEventListener("DOMContentLoaded", () => {
       btns[i].addEventListener("click", function () {
         let current = document.getElementsByClassName("btn__choice_active");
         current[0].className = current[0].className.replace(
-          " btn__choice_active",
-          ""
+          " btn__choice_active", ""
         );
         this.className += " btn__choice_active";
       });
     }
   };
-  toggleActive();
+
+  ///////////////////////////////////////////////////////////
+
   
+    /////////////////////// Анимация сдвигов ботинков //////////////////////
+
   const initialState = [
     { bottom: "35px", left: "-81px", right: "-130px" },
     {
@@ -108,7 +123,6 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-  changeShoes(slides, isPlay);
   
   function animationSlide(shoes, state) {
     shoes.animate(state, {
@@ -117,8 +131,11 @@ window.addEventListener("DOMContentLoaded", () => {
       fill: "forwards",
     });
   }
+
+  ///////////////////////////////////////////////////////////////////////
   
-  
+
+  /////////////////////// Переключения галлереи //////////////////////
   
   const slideLeft = document.querySelector(".slide");
   const slideRight = document.querySelector(".slide_right");
@@ -136,7 +153,12 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  toggleImages();
+  
+
+  ////////////////////////////////////////////////////////////////////////
+
+
+  /////////////////////// Переключение угловых ботинков //////////////////////
 
   const toggleAsideImage = function() {
     const asideShoes = document.querySelectorAll(".products__shoes-aside");
@@ -150,7 +172,12 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   };
   
-  toggleAsideImage();
+  
+
+  ////////////////////////////////////////////////////////////////////////////
+
+
+  /////////////////////// Переключение блоков через кнопку заказать//////////////////////
   
   const toggleProductsBlock = function() {
     const btnOrder = document.querySelector(".btn__order");
@@ -168,7 +195,10 @@ window.addEventListener("DOMContentLoaded", () => {
    
   };
   
-  toggleProductsBlock();
+
+  //////////////////////////////////////////////////////////////////////////////////////
+
+  /////////////////////// Переключение блоков со спреем //////////////////////
   
   const toggleSpray = function() {
     const btnRight = document.querySelector(".arr_right");
@@ -185,6 +215,14 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   };
   
+
+
+
+  toggleActive();
+  changeShoes(slides, isPlay);
+  toggleImages();
+  toggleAsideImage();
+  toggleProductsBlock();
   toggleSpray();
 });
 

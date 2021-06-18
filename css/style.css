@@ -32,6 +32,10 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  visibility: hidden;
+}
+
 img {
   max-width: 100%;
 }
