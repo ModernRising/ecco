@@ -1588,6 +1588,9 @@ button {
     padding-left: 50px;
     font-size: 16px;
   }
+  .products__descr {
+    margin-left: 10px;
+  }
   .products .price {
     margin-top: 0px;
   }
@@ -1635,6 +1638,7 @@ button {
   .products__col-2-descr {
     text-align: center;
     font-size: 16px;
+    padding: 0 20px;
   }
 }
 
