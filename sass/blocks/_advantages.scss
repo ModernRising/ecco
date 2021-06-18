@@ -78,6 +78,9 @@
     }
     &__footer-video {
         iframe {
+            width: 556px;
+            height: 556px;
+            border: none;
             border-radius: 70px;
         }
     }

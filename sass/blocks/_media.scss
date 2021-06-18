@@ -512,6 +512,7 @@
         padding: 50px 0;
         &__wrapper {
             .products__sales {
+                top: 20%;
                 padding: 21px 0px 0px 6px;
                 width: 61px;
                 height: 61px;
@@ -519,7 +520,10 @@
             }
         }
         &__col-l {
-            padding: 50px 0px 0px 0px;
+            width: 100%;
+        }
+        &__col-2 {
+            width: 100%;
         }
         &__container {
             padding-left: 50px;
@@ -539,6 +543,7 @@
         }
         &__title {
             font-size: 28px;
+            margin-left: 0px;
         }
         &__col-2-container {
             .link-back {
@@ -695,14 +700,13 @@
         }
     }
     .products {
+        .logo-link_white{
+                display: block;
+                left: 85px;
+        }
         &__title {
             font-size: 24px;
-        }
-        &__col-l {
-            width: 100%;
-        }
-        &__col-2 {
-            width: 100%;
+            margin-left: 20px;
         }
         &__col-2-descr {
             font-size: 14px;
