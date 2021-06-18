@@ -796,6 +796,7 @@ button {
 }
 
 .products .logo-link_white {
+  position: absolute;
   display: none;
 }
 
