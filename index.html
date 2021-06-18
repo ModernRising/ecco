@@ -28,9 +28,11 @@
                     <div class="price_old">3690 грн</div>
                     <div class="price_new">1379 грн</div>
                 </div>
-                <button class="btn__sales">
-                    заказать по скидке
-                </button>
+                <a href="#products" id="sales-link">
+                    <button class="btn__sales">
+                        заказать по скидке
+                    </button>
+                </a>
             </div>
             <img src="img/left-shoes.png" alt="" class="intro__shoes-left">
             <img src="img/right-shoes.png" alt="" class="intro__shoes-right">
@@ -188,7 +190,7 @@
             </div>
         </div>
     </section>
-    <section class="products" style="display: none;">
+    <section class="products" id="products">
         <div class="container">
             <div class="products__wrapper">
                 <div class="products__col-l">
@@ -209,12 +211,13 @@
                     <div class="products__shoes-aside">
                         <img src="img/products/products-aside2.png" alt="products">
                     </div>
-                    <div class="products__col-2-container products__col-2-container_active">
+                    <div
+                        class="products__col-2-container products__col-2-container_active products__col-2-container_hidden-xs">
                         <div class="products__header">
                             <a href="#" class="logo-link">
                                 <img src="img/logo.png" alt="logo" class="logo">
                             </a>
-                            <div class="products__title">LOREM IPSUM DOLOR</div>
+                            <h2 class="products__title">LOREM IPSUM DOLOR</h2>
                         </div>
                         <div class="price">
                             <div class="price_old price_old-red">3690 грн</div>
@@ -268,16 +271,34 @@
                         </div>
                         <button class="btn__order">ЗАКАЗАТЬ</button>
                     </div>
-                    <div class="products__col-2-container">
+                    <div class="products__col-2-container products__col-2-container_visible-xs">
                         <div class="products__header">
                             <a href="#" class="logo-link">
                                 <img src="img/logo.png" alt="logo" class="logo">
                             </a>
-                            <div class="products__title">LOREM IPSUM DOLOR</div>
+                            <h2 class="products__title">LOREM IPSUM DOLOR</h2>
                         </div>
                         <div class="price">
                             <div class="price_old price_old-red">3690 грн</div>
                             <div class="price_new price_new-red">1379 грн</div>
+                        </div>
+                        <div class="products__container products__container_visible-xs">
+                            <div class="products__name">
+                                <span>Сезон</span>
+                                <span>Вид товаров:</span>
+                                <span>Каблук:</span>
+                                <span>Верх:</span>
+                                <span>Подошва:</span>
+                                <span>Стиль:</span>
+                            </div>
+                            <div class="products__descr">
+                                <span>Осень 2019</span>
+                                <span>Кроссовки</span>
+                                <span>Ниже 30 мм</span>
+                                <span>Натуральная телячья кожа</span>
+                                <span>Термополиуретан</span>
+                                <span>Ежедневный (casual)</span>
+                            </div>
                         </div>
                         <form action="#" class="products__form">
                             <div class="form-select">
@@ -313,7 +334,7 @@
                             <a href="#" class="logo-link">
                                 <img src="img/logo.png" alt="logo" class="logo">
                             </a>
-                            <div class="products__title">Bouileine Shoes Spray</div>
+                            <h2 class="products__title">Bouileine Shoes Spray</h2>
                         </div>
                         <div class="price">
                             <div class="price_old price_old-red">3690 грн</div>

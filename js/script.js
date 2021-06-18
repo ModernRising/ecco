@@ -38,6 +38,14 @@ window.addEventListener("DOMContentLoaded", () => {
     $("[data-content]").removeClass(activeCls);
     $(`[data-content="${$(this).data("open-block")}"`).addClass(activeCls);
   });
+
+  $(document).on('click', '#sales-link', function() {
+    var linkID = $(this).attr('href');
+    $('html, body').animate({ 
+      scrollTop: $(linkID).offset().top 
+    }, 1200);
+  });
+    
   
   const toggleActive = function () {
     let btns = document.querySelectorAll(".btn__choice");
@@ -59,7 +67,7 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       bottom: "34px",
       left: "-39px",
-      right: "282px",
+      right: "230px",
     },
   ];
   const initialStateSecond = [
@@ -67,7 +75,7 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       bottom: "35px",
       left: "-81px",
-      right: "-130px",
+      right: "-80px",
     },
   ];
   

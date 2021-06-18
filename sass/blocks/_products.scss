@@ -52,6 +52,7 @@
         right: -45%;
         top: -75px;
         z-index: 10;
+        pointer-events: none;
         &_active {
             display: block;
             animation: fadeIn 2s;
@@ -99,6 +100,9 @@
         display: flex;
         font-size: 18px;
         color: #000851;
+        &_visible-xs {
+            display: none;
+        }
     }
     &__name {
         span {
@@ -217,7 +221,6 @@
         display: flex;
         margin: 0 auto;
         padding-top: 30px;
-        overflow: hidden;
     }
     &__item{
         display: none;

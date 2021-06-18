@@ -726,7 +726,7 @@ button {
 
 .advantages__footer {
   position: relative;
-  z-index: 1;
+  z-index: 50;
   padding-top: 290px;
 }
 
@@ -835,6 +835,7 @@ button {
   right: -45%;
   top: -75px;
   z-index: 10;
+  pointer-events: none;
 }
 
 .products__shoes-aside_active {
@@ -906,6 +907,10 @@ button {
   display: flex;
   font-size: 18px;
   color: #000851;
+}
+
+.products__container_visible-xs {
+  display: none;
 }
 
 .products__name span {
@@ -1080,7 +1085,6 @@ button {
   display: flex;
   margin: 0 auto;
   padding-top: 30px;
-  overflow: hidden;
 }
 
 .products__item {
@@ -1149,6 +1153,15 @@ button {
   .advantages__footer-img {
     bottom: -11%;
     right: -35%;
+  }
+  .products__shoes-1 img {
+    max-width: 85%;
+  }
+  .products__shoes-2 img {
+    max-width: 85%;
+  }
+  .products__col-2-block {
+    padding: 0 40px;
   }
 }
 
@@ -1277,6 +1290,39 @@ button {
   .advantages__footer-img {
     bottom: -9%;
     right: -35%;
+  }
+  .products {
+    padding: 100px 0px 50px 0px;
+    overflow-x: hidden;
+  }
+  .products__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .products__col-l {
+    width: 90%;
+    border-radius: 25px 25px 0px 0px;
+  }
+  .products__col-2 {
+    width: 90%;
+    border-radius: 0px 0px 25px 25px;
+  }
+  .products__shoes-1 img {
+    max-width: 70%;
+  }
+  .products__shoes-2 img {
+    max-width: 70%;
+  }
+  .products__col-2-block {
+    padding: 0 40px;
+  }
+  .products__second-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -1417,6 +1463,45 @@ button {
     bottom: -12%;
     right: -35%;
   }
+  .products__col-l {
+    min-height: 500px;
+  }
+  .products__shoes-1 img {
+    max-width: 70%;
+  }
+  .products__shoes-2 img {
+    max-width: 70%;
+  }
+  .products__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .products__images {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products__container {
+    padding-left: 110px;
+  }
+  .products__col-2-container .logo-link {
+    display: none;
+  }
+  .products__col-2-block {
+    padding: 0 40px;
+  }
+  .products__second-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .products__second-wrapper .logo-link {
+    display: none;
+  }
+  .products__col-2_second .products__title {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1486,6 +1571,70 @@ button {
   .advantages__footer-img {
     bottom: -13%;
     right: -35%;
+  }
+  .products {
+    padding: 50px 0;
+  }
+  .products__wrapper .products__sales {
+    padding: 21px 0px 0px 6px;
+    width: 61px;
+    height: 61px;
+    font-size: 18px;
+  }
+  .products__col-l {
+    padding: 50px 0px 0px 0px;
+  }
+  .products__container {
+    padding-left: 50px;
+    font-size: 16px;
+  }
+  .products .price {
+    margin-top: 0px;
+  }
+  .products .price_new {
+    font-size: 22px;
+  }
+  .products .price_old {
+    font-size: 18px;
+  }
+  .products__title {
+    font-size: 28px;
+  }
+  .products__col-2-container .link-back {
+    font-size: 16px;
+  }
+  .products__second-wrapper {
+    padding-top: 50px;
+  }
+  .products__second-wrapper .products__col-l {
+    padding: 0;
+  }
+  .products__second-wrapper .products__sales {
+    top: 20px;
+    padding: 21px 0px 0px 6px;
+    width: 61px;
+    height: 61px;
+    font-size: 18px;
+  }
+  .products .arr {
+    width: 45px;
+    height: 45px;
+  }
+  .products .arr_left {
+    left: 0;
+  }
+  .products .arr_right {
+    right: 0;
+  }
+  .products__item img {
+    max-width: 260px;
+  }
+  .products__col-2-block {
+    padding: 0;
+  }
+  .products__col-2-descr {
+    text-align: center;
+    font-size: 16px;
   }
 }
 
@@ -1559,6 +1708,10 @@ button {
   .advantages {
     padding: 50px 0px;
   }
+  .advantages__effect_3 {
+    top: 89%;
+    left: -29%;
+  }
   .advantages .title {
     font-size: 24px;
   }
@@ -1584,6 +1737,60 @@ button {
   .advantages__footer-img {
     bottom: -8%;
     right: -62%;
+  }
+  .products__title {
+    font-size: 24px;
+  }
+  .products__col-l {
+    width: 100%;
+  }
+  .products__col-2 {
+    width: 100%;
+  }
+  .products__col-2-descr {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .products__shoes-1 img {
+    max-width: 80%;
+  }
+  .products__shoes-2 img {
+    max-width: 80%;
+  }
+  .products__col-2-container_hidden-xs {
+    display: none;
+  }
+  .products__col-2-container_visible-xs {
+    display: block;
+  }
+  .products__container_visible-xs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    margin-top: 5px;
+    padding-left: 30px;
+  }
+  .products .price {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products__form {
+    padding: 0 20px;
+  }
+  .products__form .btn__order {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .products .select-field {
+    width: 100%;
+    height: 45px;
+    font-size: 13px;
+  }
+  .products .link-back {
+    display: none;
   }
 }
 
@@ -1673,5 +1880,11 @@ button {
   .advantages__footer-img {
     bottom: -5%;
     right: -62%;
+  }
+  .products__title {
+    font-size: 22px;
+  }
+  .products__container_visible-xs {
+    padding: 0 13px;
   }
 }
