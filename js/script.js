@@ -140,7 +140,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const slideLeft = document.querySelector(".slide");
   const slideRight = document.querySelector(".slide_right");
   
-  
   const toggleImages = function() {
     const productsImages = document.querySelectorAll(".products__images");
     for (let i = 0; i < productsImages.length; i++) {
@@ -204,7 +203,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const btnRight = document.querySelector(".arr_right");
     const btnLeft = document.querySelector(".arr_left");
     const sprayItem = document.querySelectorAll(".products__item");
-    console.log(sprayItem);
     for (let i = 0; i < sprayItem.length; i++) {
       btnRight.addEventListener("click", () => {
         sprayItem[i].classList.toggle("products__item_active");
